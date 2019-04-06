@@ -1,0 +1,23 @@
+
+State Machine - |refrigerante|estado
+Name estado.refri estado.cents100 estado.cents95 estado.cents90 estado.cents85 estado.cents80 estado.cents75 estado.cents70 estado.cents65 estado.cents60 estado.cents55 estado.cents50 estado.cents45 estado.cents40 estado.cents35 estado.cents30 estado.cents25 estado.cents20 estado.cents10 estado.cents0 
+estado.cents0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+estado.cents10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+estado.cents20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+estado.cents25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+estado.cents30 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+estado.cents35 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+estado.cents40 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+estado.cents45 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+estado.cents50 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+estado.cents55 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+estado.cents60 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+estado.cents65 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+estado.cents70 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.cents75 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.cents80 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.cents85 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.cents90 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.cents95 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.cents100 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.refri 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
