@@ -1,0 +1,106 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+
+entity maq IS
+PORT  (ck, sobe, rst, : IN std_logic;
+		q :  OUT std_logic_VECTOR(3 DOWNTO 0)
+		);
+end maq;
+
+ARCHITECTURE arch OF maq IS
+	TYPE st IS (caso_p, caso_o, caso_n, caso_m, caso_l, caso_k, caso_j, caso_i, caso_h, caso_g, caso_f, caso_e, caso_d, caso_c, caso_b, caso_a);
+	Signal estado : st; 
+	
+BEGIN	
+	process(ck, rst)
+	begin
+		IF  rst = '1' THEN
+			estado <= caso_a;
+		ELSIF (ck'EVENT AND ck = '1') THEN
+			CASE estado IS
+				WHEN  caso_a  =>
+					IF sobe = '1' THEN estado <= caso_b;
+					ELSE               estado <= caso_a;
+					END IF;
+				WHEN  caso_b  =>
+					IF sobe = '1' THEN estado <= caso_c;
+					ELSE         		 estado <= caso_a;
+					END IF;
+				WHEN  caso_c  =>
+					IF sobe = '1' THEN estado <= caso_d;
+					ELSE               estado <= caso_b;
+					END IF;
+				WHEN  caso_d  =>
+					IF sobe = '1' THEN estado <= caso_e;
+					ELSE               estado <= caso_c;
+					END IF;
+				WHEN  caso_e  =>
+					IF sobe = '1' THEN estado <= caso_f;
+					ELSE					 estado <= caso_d;
+					END IF;
+				WHEN  caso_f  =>
+					IF sobe = '1' THEN estado <= caso_g;
+					ELSE 					 estado <= caso_e;
+					END IF;
+				WHEN	caso_g  =>
+					IF sobe = '1' THEN estado <= caso_h;
+					ELSE 					 estado <= caso_f;
+					END IF;
+				WHEN  caso_h  =>
+					IF sobe = '1' THEN estado <= caso_i;
+					ELSE 					 estado <= caso_g;
+					END IF;
+				WHEN  caso_i  =>
+					IF sobe = '1' THEN estado <= caso_j;
+					ELSE 					 estado <= caso_h;
+					END IF;	
+				WHEN  caso_j  =>
+					IF sobe = '1' THEN estado <= caso_k;
+					ELSE 					 estado <= caso_i;
+					END IF;
+				WHEN  caso_k  =>
+					IF sobe = '1' THEN estado <= caso_l;
+					ELSE 					 estado <= caso_j;
+					END IF;
+				WHEN  caso_l  =>
+					IF sobe = '1' THEN estado <= caso_m;
+					ELSE 					 estado <= caso_k;
+					END IF;
+				WHEN  caso_m  =>
+					IF sobe = '1' THEN estado <= caso_n;
+					ELSE 					 estado <= caso_l;
+					END IF;
+				WHEN  caso_n  =>
+					IF sobe = '1' THEN estado <= caso_o;
+					ELSE 					 estado <= caso_m;
+					END IF;	
+				WHEN  caso_o  =>
+					IF sobe = '1' THEN estado <= caso_p;
+					ELSE 					 estado <= caso_n;
+					END IF;
+				WHEN  caso_p  =>
+					IF sobe = '1' THEN estado <= caso_p;
+					ELSE 					 estado <= caso_o;
+					END IF;
+			END CASE;
+		END IF;
+	end process;
+
+WITH estado SELECT q <=
+			"0000" WHEN caso_a,
+			"0001" WHEN caso_b,
+			"0010" WHEN caso_c,
+			"0011" WHEN caso_d,
+			"0100" WHEN caso_e,
+			"0101" WHEN caso_f,
+			"0110" WHEN caso_g,
+			"0111" WHEN caso_h,
+			"1000" WHEN caso_i,
+			"1001" WHEN caso_j,
+			"1010" WHEN caso_k,
+			"1011" WHEN caso_l,
+			"1100" WHEN caso_m,
+			"1101" WHEN caso_n,
+			"1110" WHEN caso_o,
+			"1111" WHEN caso_p;
+END arch;

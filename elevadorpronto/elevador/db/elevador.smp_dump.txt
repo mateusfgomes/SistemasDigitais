@@ -1,0 +1,19 @@
+
+State Machine - |elevador|estado
+Name estado.andar15 estado.andar14 estado.andar13 estado.andar12 estado.andar11 estado.andar10 estado.andar9 estado.andar8 estado.andar7 estado.andar6 estado.andar5 estado.andar4 estado.andar3 estado.andar2 estado.andar1 estado.andar0 
+estado.andar0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+estado.andar1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+estado.andar2 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+estado.andar3 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+estado.andar4 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+estado.andar5 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+estado.andar6 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+estado.andar7 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+estado.andar8 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+estado.andar9 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+estado.andar10 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+estado.andar11 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+estado.andar12 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.andar13 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.andar14 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+estado.andar15 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
